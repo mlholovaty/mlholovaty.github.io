@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/png" href="images/logo.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mateus Holovaty Aerospace Portfolio</title>
@@ -115,8 +116,8 @@
       box-shadow: var(--shadow-sm);
     }
     .brand-mark {
-      width: 42px;
-      height: 42px;
+      width: 46px;
+      height: 46px;
       object-fit: contain;
       border-radius: 12px;
       background: var(--color-surface);
@@ -234,11 +235,27 @@
     .project-body { padding: var(--space-5); display: grid; gap: var(--space-4); }
     .project-body h3 { font-size: var(--text-lg); }
     .project-body p { color: var(--color-text-muted); font-size: var(--text-sm); }
-    .tags { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      align-items: flex-start;
+    }
+
     .tags span {
-      font-size: var(--text-xs); color: var(--color-primary);
-      background: var(--color-primary-highlight); padding: 0.45rem 0.7rem; border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      align-self: flex-start;
+      width: fit-content;
+      padding: 0.45rem 0.7rem;
+      border-radius: var(--radius-full);
+      font-size: var(--text-xs);
       font-weight: 600;
+      line-height: 1;
+      white-space: nowrap;
+      color: var(--color-primary);
+      background: var(--color-primary-highlight);
     }
 
     .timeline { display: grid; gap: var(--space-4); }
@@ -333,7 +350,7 @@
           <span class="eyebrow">Aerospace Engineering</span>
           <h1>Building analytical, design, and simulation-driven engineering work.</h1>
           <p>
-            I am Mateus Lampe Holovaty, I am from the south of Brazil, and I am Aerospace Engineering graduate from Kent State University 2026. I am the former senior propulsion engineer of Kent State High Powered Rocket Team, Golden Flashes. I was also awarded first place at the 2026 Kent State University Undergraduate Research Symposium for my published research on Optimization of Electrified Aviation Hubs to Enable New Air Transportation Architectures for Connecting Great Lakes Communities. I have also been awarded the 2024-2025 and 2025-2026 Prof George Schneider Scholarship from the Society of Manufacturing Engineers (SME). During my time at PUCPR, I was nominated for the first university leadership award Irmão Clemente Ivo Juliatto. As I graduate, I am looking to pursue my Master's degree in Aerospace Engineering, in which I plan to further develop my research on route optmization for electric aircraft and start a new research in electric propulsion for deep space exploration. My goal is to work within rocket propulsion or propulsion devices for deep space exploration spacecrafts.
+            I am Mateus Lampe Holovaty. I am from the south of Brazil, and I am an Aerospace Engineering graduate from Kent State University 2026. I am the former senior propulsion engineer of Kent State High Powered Rocket Team, Golden Flashes. I was also awarded first place at the 2026 Kent State University Undergraduate Research Symposium for my published research on Optimization of Electrified Aviation Hubs to Enable New Air Transportation Architectures for Connecting Great Lakes Communities. I have also been awarded the 2024-2025 and 2025-2026 Prof George Schneider Scholarship from the Society of Manufacturing Engineers (SME). During my time at PUCPR, I was nominated for the first university leadership award Irmão Clemente Ivo Juliatto. As I graduate, I am looking to pursue my Master's degree in Aerospace Engineering, in which I plan to further develop my research on route optmization for electric aircraft and start a new research in electric propulsion for deep space exploration. My goal is to work within rocket propulsion or propulsion devices for deep space exploration spacecrafts.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#projects">View Projects</a>
@@ -367,23 +384,22 @@
         <div class="about-grid">
           <article class="panel">
             <p>
-             My academic background starts at my home country Brazil, in which I took part of an 
-innovating program called American Academy, a partnership between Pontifícia 
-Universidade Católica do Paraná (PUC-PR) and Kent State University in which students 
-have two years of Kent State professors teaching at Brazil. After finishing my two years at 
+             My academic background starts in my home country, Brazil, where I took part in an 
+innovative program called American Academy, a partnership between Pontifícia 
+Universidade Católica do Paraná (PUC-PR) and Kent State University, where students 
+have two years of Kent State professors teaching in Brazil. After finishing my two years in 
 the program, I got my Associate of Science degree and moved to the United States to 
 further pursue my academic goals in Aerospace Engineering at Kent State University 
 College of Aeronautics and Engineering. I rapidly got involved in the university High-Powered Rocket Team, for which I later 
-became the propulsion team lead, and the vice-president, latter I became the senior engineer for propulsion as part of my capstone project to research, develop and manufacture custom solid motors. 
+became the propulsion team lead, and the vice-president, later I became the senior engineer for propulsion as part of my capstone project to research, develop and manufacture custom solid motors. 
     
             </p>
             <p>
               While I am deeply fascinated by chemical rockets, I am especially drawn to propulsion 
-technologies that can expand our capabilities beyond Earth orbit. My career goal is to be in 
-the area of research and development. A major focus is electrical propulsion which still 
+technologies that can expand our capabilities beyond Earth orbit. My career goal is to be in the area of research and development. A major focus is on electrical propulsion, which still 
 remains with some challenges and research opportunities, such as thruster scaling and 
-power-levels and thrust-to-power trade-offs which I would like to address in order to 
-improve efficiency, capacity and operational period of Hall thrusters for deep space 
+power levels and thrust-to-power trade-offs, which I would like to address in order to 
+improve efficiency, capacity, and operational period of Hall thrusters for deep space 
 exploration and transport. 
 In parallel, I would like to explore more speculative propulsion ideas, such as electric sails 
 or solar sails. Investigating how to scale and adapt such concepts and whether they can be 
@@ -417,7 +433,7 @@ hybridized.
             <span class="eyebrow">Projects</span>
             <h2>My work.</h2>
           </div>
-          <p>Projects I lead and helped during my Bachelor's graduation. Those are the projects that appealed to me the most.</p>
+          <p>Projects I led and helped with during my Bachelor's graduation. Those are the projects that appealed to me the most.</p>
         </div>
         <div class="project-grid">
           <article class="project-card">
@@ -425,7 +441,7 @@ hybridized.
             <div class="project-body">
               <div class="tags"><span>Python</span><span>Research</span></div>
               <h3>Optimization of Electrified Aviation Hubs to Enable New Air Transportation Architectures for Connecting Great Lakes Communities</h3>
-              <p>This study shows how to overcome range limitations of electric aircraft to enable efficient regional connectivity across the Great Lakes region, particularly for underserved areas. The analysis uses two aircraft performance modeling combined with routing simulations and an algorithm to optimize the placement of recharging nodes based on range, energy efficiency, and airport availability. The outcome shows that an optimized charging network can significantly expand feasible routes and improve regional accessibility while minimizing energy use.</p>
+              <p>This study shows how to overcome range limitations of electric aircraft to enable efficient regional connectivity across the Great Lakes region, particularly for underserved areas. The analysis uses two aircraft performance models combined with routing simulations and an algorithm to optimize the placement of recharging nodes based on range, energy efficiency, and airport availability. The outcome shows that an optimized charging network can significantly expand feasible routes and improve regional accessibility while minimizing energy use.</p>
             </div>
           </article>
           <article class="project-card">
@@ -433,7 +449,7 @@ hybridized.
             <div class="project-body">
               <div class="tags"><span>Simulation</span><span>Design</span></div>
               <h3>Rocket Valkyrie & Motor Odin</h3>
-              <p>Designed, simulated, assembled and tested the motor called Odin for project Valkyrie as senior propulsion engineer. This was my capstone project in which I designed a custom motor for our rocket that competes at the largest rocket competion in the world called IREC. This required simulation, manufaturing and testing different iterations. With that, this motor turned to be at the time, the most powerfull motor ever flown by our team with a total impulse of 10,862 Ns. Also, this was the first time that the team conducted two full scale test flight that achieve an apogee of 10,353 ft.</p>
+              <p>Designed, simulated, assembled, and tested the motor called Odin for the project Valkyrie as a senior propulsion engineer. This was my capstone project in which I designed a custom motor for our rocket that competes at the largest rocket competition in the world, called IREC. This required simulation, manufacturing, and testing different iterations. With that, this motor turned out to be, at the time, the most powerfull motor ever flown by our team with a total impulse of 10,862 Ns. Also, this was the first time that the team conducted two full-scale test flights that achieved an apogee of 10,353 ft.</p>
             </div>
           </article>
           <article class="project-card">
@@ -441,7 +457,7 @@ hybridized.
             <div class="project-body">
               <div class="tags"><span>Leadership</span><span>Management</span></div>
               <h3>Rocket Andromeda</h3>
-              <p>Lead and managed the team for project Andromeda as Vice-President. Helped to conduct meetings and preparation for the competition. Also, continued helping with propulsion and helped in the development of the first 40 in motor that the team flown. </p>
+              <p> Led and managed the team for project Andromeda as Vice-President. Helped to conduct meetings and prepare for the competition. Also, continued helping with propulsion and helped in the development of the first 40 in motor that the team flew. </p>
             </div>
           </article>
           <article class="project-card">
@@ -449,7 +465,7 @@ hybridized.
             <div class="project-body">
               <div class="tags"><span>Simulation</span><span>Leadership</span></div>
               <h3>Rocket SolarFlare</h3>
-              <p>Simulated and manufactured the custom motor for project SolarFlare as propulsion leader. Helped to develop and assemble the motor used for project SolarFlare and managed the propulsion team as a subsection leader. Helped with the simulations and participated in the manufacture of several iterations of the motor.</p>
+              <p>Simulated and manufactured the custom motor for the project SolarFlare as propulsion leader. Helped to develop and assemble the motor used for the project SolarFlare and managed the propulsion team as a subsection leader. Helped with the simulations and participated in the manufacture of several iterations of the motor.</p>
             </div>
           </article>
           <article class="project-card">
@@ -457,7 +473,7 @@ hybridized.
             <div class="project-body">
               <div class="tags"><span>FEA</span><span>ANSYS</span></div>
               <h3>Nozzle Bearing Analysis</h3>
-              <p>Used ANSYS Finite Element Analysis to predict the life expectency of two sets of bearings used in a cryogenic nozzle for aircraft refuel. This was my final project for the Introduction to FEA course in which I separelly assembled two halfs of a nozzle the company I interned at manufacture, and symulated it using non-linear approach for finding the life expectency and if any other material can be used.</p>
+              <p>Used ANSYS Finite Element Analysis to predict the life expectancy of two sets of bearings used in a cryogenic nozzle for aircraft refueling. This was my final project for the Introduction to FEA course in which I separately assembled two halves of a nozzle the company I interned at manufacture, and symulated it using non-linear approach for finding the life expectency and if any other material can be used.</p>
             </div>
           </article>
         </div>
@@ -476,7 +492,7 @@ hybridized.
         <div class="timeline">
           <article class="timeline-item">
             <h3>Main Author</h3>
-            <p>May 2025 - April 2026 · Researched, presented and published a paper on Optimization of Electrified Aviation Hubs to Enable New Air Transportation Architectures for Connecting Great Lakes Communities. I presented and published on the American Insitute of Aeronautics and Astronautics (AIAA) Region III Student Conference. I also presented this on the 2026 Kent State Undergraduate Research Symposium in which I got first place.</p>
+            <p>May 2025 - April 2026 · Researched, presented, and published a paper on Optimization of Electrified Aviation Hubs to Enable New Air Transportation Architectures for Connecting Great Lakes Communities. I presented and published at the American Institute of Aeronautics and Astronautics (AIAA) Region III Student Conference. I also presented this at the 2026 Kent State Undergraduate Research Symposium, in which I got first place.</p>
           </article>
           <article class="timeline-item">
             <h3>Operation Assistant — Aviation Component Solutions</h3>
@@ -484,7 +500,7 @@ hybridized.
           </article>
           <article class="timeline-item">
             <h3>Kent State High Powered Rocket Team</h3>
-            <p>January 2023 - Present · The team competes at the International Rocket Engineerring Competition (IREC) on Texas to compete at the 10,000 ft Student Research and Development (SRAD) category. I have been part since moving to Kent, I then became Propulsion Leader, Vice-President and now Senior Propulsion Engineer. The team is responsible for building a rocket and documenting the progress with reports and pressentations.</p>
+            <p>January 2023 - Present · The team competes at the International Rocket Engineering Competition (IREC) in Texas to compete at the 10,000 ft Student Research and Development (SRAD) category. I have been part since moving to Kent, I then became Propulsion Leader, Vice-President, and now Senior Propulsion Engineer. The team is responsible for building a rocket and documenting the progress with reports and presentations.</p>
           </article>
         </div>
       </div>
