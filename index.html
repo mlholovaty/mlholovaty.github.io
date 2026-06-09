@@ -219,15 +219,19 @@
       overflow: hidden; display: grid; grid-template-rows: 180px 1fr;
     }
     .project-visual {
-      background:
-        linear-gradient(135deg, color-mix(in srgb, var(--color-primary) 22%, var(--color-surface-2)) 0%, var(--color-surface-offset) 100%);
-      padding: var(--space-5);
-      position: relative;
+      height: 220px;
+      overflow: hidden;
+      border-radius: 28px 28px 0 0;
+      padding: 0;
+      background: none;
     }
+
     .project-visual img {
+      display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
     }
     .wireframe, .wireframe::before, .wireframe::after {
       border: 1px solid color-mix(in srgb, var(--color-text) 14%, transparent);
@@ -463,7 +467,7 @@ hybridized.
           </article>
           <article class="project-card">
             <div class="project-visual">
-              <img src="images/andromeda.jpg" alt="Me with the rocket Andromeda standing at competition conference" />
+              <img src="images/andromeda.jpg" alt="Andromeda at the launch pad" />
             </div>
             <div class="project-body">
               <div class="tags"><span>Leadership</span><span>Management</span></div>
